@@ -3,6 +3,7 @@ import axios from 'axios';
 import "./form.css"
 
 
+
 class Form extends Component {
     constructor(props) {
         super(props)
@@ -76,15 +77,14 @@ class Form extends Component {
                     <label>First-Name :</label> <input type="text" value={this.state.firstName} onChange={this.firsthandler} placeholder="FirstName..." /><br />
                     <label>Last-Name :</label> <input type="text" value={this.state.lastName} onChange={this.lasthandler} placeholder="LastName..." /><br />
                     <label>Event-Place :</label> <input type="text" value={this.state.eventPlace} onChange={this.eventNamehandler} placeholder="EventName..." /><br />
-                    <label>EventSummary :</label><input type="text" value={this.state.eventSummary} onChange={this.eventSummaryhandler} placeholder="EventSummary..." />
-                    <br />
+                    
                     <div>
 				       <label>Upload-File :</label> <input type="file" onChange={this.onFileChange} />
 				        <button onClick={this.onFileUpload}>Upload!</button>
 			        </div>
-                    <div className="my-button">
+                    <label>EventSummary :</label><input type="text" value={this.state.eventSummary} onChange={this.eventSummaryhandler} placeholder="EventSummary..." />
                     <button id="button" value="Submit">Submit</button>
-                    </div>
+    
 
                 </form>
 
