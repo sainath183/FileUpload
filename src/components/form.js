@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios';
 import "./form.css"
+import { Button } from "@chakra-ui/button"
 
 
 
@@ -83,7 +84,7 @@ class Form extends Component {
 				        <button onClick={this.onFileUpload}>Upload!</button>
 			        </div>
                     <label>EventSummary :</label><input type="text" value={this.state.eventSummary} onChange={this.eventSummaryhandler} placeholder="EventSummary..." />
-                    <button id="button" value="Submit">Submit</button>
+                    <Button colorScheme="blue">Submit</Button>
     
 
                 </form>
