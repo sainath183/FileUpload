@@ -1,15 +1,17 @@
 import React from "react"
-//import Form from "./components/form"
 import File from "./FileUpload/File"
-
+import { ChakraProvider } from "@chakra-ui/react"
+import Button1 from "./FileUpload/Button1"
 
 function App() {
     return(
-        <div className="App">
+        <ChakraProvider>
             <File />
             <br />
             <File />
-        </div>
+            <Button1 />
+        </ChakraProvider>
+        
       
     )
 }

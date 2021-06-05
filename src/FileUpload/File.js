@@ -1,8 +1,11 @@
 import axios from 'axios';
+import React,{Component} from 'react'
+;
+import { Button } from "@chakra-ui/react"
+import { Input } from "@chakra-ui/react"
+import { Center } from "@chakra-ui/react"
 
-import React,{Component} from 'react';
-
-class App extends Component {
+class File extends Component {
 
 	state = {
 	selectedFile: null
@@ -25,14 +28,15 @@ class App extends Component {
 	render() {
 	
 	return (
-			<div>
-				<input type="file" onChange={this.onFileChange} />
-				<button onClick={this.onFileUpload}>
+        
+			<Center>
+				<Input type="file" width="300px" onChange={this.onFileChange} />
+				<Button margin="20px" border="2px" borderColor="blue.500" onClick={this.onFileUpload}>
 				Upload
-				</button>
-			</div>
+				</Button>
+			</Center>
 	);
 	}
 }
 
-export default App;
+export default File;
