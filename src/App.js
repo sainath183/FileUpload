@@ -1,11 +1,14 @@
 import React from "react"
-import Form from "./components/form"
+//import Form from "./components/form"
+import File from "./FileUpload/File"
 
 
 function App() {
     return(
         <div className="App">
-            <Form />
+            <File />
+            <br />
+            <File />
         </div>
       
     )
